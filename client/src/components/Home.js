@@ -8,7 +8,7 @@ function Home() {
   useEffect(() => {
     fetch("/articles")
       .then((r) => r.json())
-      .then(setArticles);
+      .then((d) => setArticles(d));
   }, []);
 
   return (
